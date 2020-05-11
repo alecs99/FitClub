@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'exercitii.dart';
-
+import '../main.dart';
+import 'diete.dart';
+import 'main_exercises.dart';
+import 'package:fitclubmenu/models/diete.dart';
 
 class SideMenu extends StatefulWidget {
   @override
@@ -39,31 +41,37 @@ class _SideMenuState extends State<SideMenu> {
                 )
               ),
               ListTile(
-               title: Text('Exercitii', textAlign: TextAlign.center,),
+                title: Text('Home', textAlign: TextAlign.center,),
                 onTap: () {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context)  => Exercitii(),
+                        builder: (context)  => Home(),
                       )
                   );
                 },
               ),
               ListTile(
-                title: Text('text2', textAlign: TextAlign.center,),
-                /*
+               title: Text('All exercises', textAlign: TextAlign.center,),
                 onTap: () {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context)  => GroupEx(
-                              groupTitle: "Chest"
-                          )
+                          builder: (context)  => MainExercises(),
                       )
                   );
                 },
-
-                 */
+              ),
+              ListTile(
+                title: Text('Diets', textAlign: TextAlign.center,),
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context)  => Diete(),
+                      )
+                  );
+                },
               ),
               ListTile(
                 title: Text('text3', textAlign: TextAlign.center,),

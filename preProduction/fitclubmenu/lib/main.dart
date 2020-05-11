@@ -1,9 +1,9 @@
-import 'package:fitclubmenu/models/exercitii.dart';
+import 'package:fitclubmenu/models/main_exercises.dart';
 import 'package:flutter/material.dart';
 
 import 'models/diete.dart';
 import 'optiuni.dart';
-
+import 'package:fitclubmenu/models/side_menu.dart';
 
 void main() => runApp(MaterialApp(
   home: Home(),
@@ -41,7 +41,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
       Optiuni('Calculator calorii in functie de alimentele consumate', 'assets/mancare.png')
     ];
     return Scaffold(
-        appBar: AppBar(
+      drawer: SideMenu(),
+      appBar: AppBar(
           title: Text('Acasa'),
           centerTitle: true,
         ),
@@ -60,7 +61,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                     else if(index == 1){
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => Exercitii()),
+                        MaterialPageRoute(builder: (context) => MainExercises()),
                       );
                     }
                     else if(index == 2){

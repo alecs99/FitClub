@@ -5,12 +5,12 @@ import 'muscle_menu.dart';
 import 'side_menu.dart';
 
 
-class Exercitii extends StatefulWidget {
+class MainExercises extends StatefulWidget {
   @override
-  _ExercitiiState createState() => _ExercitiiState();
+  _MainExercisesState createState() => _MainExercisesState();
 }
 
-class _ExercitiiState extends State<Exercitii> {
+class _MainExercisesState extends State<MainExercises> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

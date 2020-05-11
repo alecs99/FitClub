@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
 import 'user.dart';
-
+import 'package:fitclubmenu/models/side_menu.dart';
 
 class Diete extends StatefulWidget {
   @override
@@ -161,6 +160,7 @@ class _RezultatState extends State<Rezultat> {
   Widget build(BuildContext context) {
     if(id == 1){
       return Scaffold(
+      drawer: SideMenu(),
       appBar: AppBar(
         title: Text('Nutritie recomandata:'),
         centerTitle: true,
@@ -209,6 +209,7 @@ class _RezultatState extends State<Rezultat> {
     }
     else if(id == 2){
       return Scaffold(
+        drawer: SideMenu(),
         appBar: AppBar(
           title: Text('Nutritie recomandata:'),
           centerTitle: true,
@@ -257,6 +258,7 @@ class _RezultatState extends State<Rezultat> {
     }
     else if(id == 3){
       return Scaffold(
+        drawer: SideMenu(),
         appBar: AppBar(
           title: Text('Nutritie recomandata:'),
           centerTitle: true,
@@ -305,6 +307,7 @@ class _RezultatState extends State<Rezultat> {
     }
     else if(id == 4){
       return Scaffold(
+        drawer: SideMenu(),
         appBar: AppBar(
           title: Text('Nutritie recomandata:'),
           centerTitle: true,
@@ -353,6 +356,7 @@ class _RezultatState extends State<Rezultat> {
     }
     else if(id == 5){
       return Scaffold(
+        drawer: SideMenu(),
         appBar: AppBar(
           title: Text('Nutritie recomandata:'),
           centerTitle: true,
@@ -401,6 +405,7 @@ class _RezultatState extends State<Rezultat> {
     }
     else if(id == 6){
       return Scaffold(
+        drawer: SideMenu(),
         appBar: AppBar(
           title: Text('Nutritie recomandata:'),
           centerTitle: true,
@@ -449,6 +454,7 @@ class _RezultatState extends State<Rezultat> {
     }
     else if(id == 7){
       return Scaffold(
+        drawer: SideMenu(),
         appBar: AppBar(
           title: Text('Nutritie recomandata:'),
           centerTitle: true,
@@ -497,6 +503,7 @@ class _RezultatState extends State<Rezultat> {
     }
     else if(id == 8){
       return Scaffold(
+        drawer: SideMenu(),
         appBar: AppBar(
           title: Text('Nutritie recomandata:'),
           centerTitle: true,
@@ -545,6 +552,7 @@ class _RezultatState extends State<Rezultat> {
     }
     else if(id == 9){
       return Scaffold(
+        drawer: SideMenu(),
         appBar: AppBar(
           title: Text('Nutritie recomandata:'),
           centerTitle: true,
