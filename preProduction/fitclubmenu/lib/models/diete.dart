@@ -29,6 +29,7 @@ class _dieteState extends State<Diete> with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        drawer: SideMenu(),
         appBar: AppBar(
           title: Text('Calculator'),
           centerTitle: true,

@@ -35,57 +35,68 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
-    List<Optiuni> optiuni = [
-      Optiuni('Generator diete in functie de obiectiv', 'assets/mancare.png'),
-      Optiuni('Videoclipuri pentru exercitii', 'assets/gantera.png'),
-      Optiuni('Calculator calorii in functie de alimentele consumate', 'assets/mancare.png')
-    ];
+    final String text =
+        'FitClub it is the app that help you have a healthy life. '
+        'We created the app out of necessity because we wanted to have all the exercies and diets in one place.'
+        'Fitclub brings you the best diets and exercices from the internet all in one place.';
+
+    final String functionalites =
+        '-The diet calculator gives you detailed info about what you have to eat every day, '
+        'created depending on the age, height, weight and the goal set: '
+        'Weight loss, muscle gain or to keep your shape  \n'
+        '-The exercices section gives you precise videos for every muscle group.'
+        'Every video comes also with a short description and the benefits \n'
+        '-The calories calculator gives you the option to add what you eat in a day'
+        'and gives you an aproximation of calories.';
     return Scaffold(
       drawer: SideMenu(),
       appBar: AppBar(
-          title: Text('Acasa'),
+          title: Text('Home'),
           centerTitle: true,
         ),
-        body: ListView.builder(
-            itemCount: optiuni.length,
-            itemBuilder: (context, index){
-              return Card(
-                child: ListTile(
-                  onTap: (){
-                    if(index == 0){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => Diete()),
-                    );
-                    }
-                    else if(index == 1){
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => MainExercises()),
-                      );
-                    }
-                    else if(index == 2){
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => Diete()),
-                      );
-                    }
-                  },
-                  title: Text(optiuni[index].optiune),
-                  leading: CircleAvatar(
-                    backgroundImage: AssetImage(optiuni[index].caleFisier),
-                    backgroundColor: Colors.transparent,
-                  )
+        body: ListView(
+              children: <Widget>[
+                new ListTile(
+                  title: Text('Welcome to Fitclub', style: TextStyle(fontSize: 25, color: Colors.blue, fontWeight: FontWeight.bold), textAlign: TextAlign.center,),
                 ),
+                new Container(
+                  width: 230.00,
+                  height: 220.00,
+                  decoration: new BoxDecoration(
+                  image: new DecorationImage(
+                  image: ExactAssetImage('assets/fitperson.png'),
+                  fit: BoxFit.fitHeight,
+                  ),
 
-              );
-
-
-      }
-    ),
-    );
-
-
+                ),
+                ),
+                new Container(
+                  width: 100,
+                  height: 150,
+                  alignment: Alignment.centerLeft,
+                  padding: EdgeInsets.all(10),
+                  margin: EdgeInsets.all(10),
+                  color: Colors.blue,
+                  child: new ListTile(
+                    title: Text('Short Description', style: TextStyle(fontSize: 20, color: Colors.white, fontWeight: FontWeight.bold)),
+                    subtitle: Text(text, style: TextStyle(fontSize: 13, color: Colors.white)),
+                   ),
+                ),
+                new Container(
+                  width: 100,
+                  height: 230,
+                  alignment: Alignment.centerLeft,
+                  padding: EdgeInsets.all(10),
+                  margin: EdgeInsets.all(10),
+                  color: Colors.blue,
+                  child: new ListTile(
+                    title: Text('Main functionalites', style: TextStyle(fontSize: 20, color: Colors.white, fontWeight: FontWeight.bold)),
+                    subtitle: Text(functionalites, style: TextStyle(fontSize: 13, color: Colors.white)),
+                  ),
+                )
+              ]
+         ),
+        );
   }
 }
 
