@@ -20,7 +20,7 @@ class _MuscleMenuState extends State<MuscleMenu> {
                     width: 100,
                     color: Colors.white,
                     child:  ListTile(
-                        title: Text('Chest', style: TextStyle(fontSize: 15, color: Colors.blueGrey), textAlign: TextAlign.center),
+                        title: Text('Chest', style: TextStyle(fontSize: 15, color: Colors.blue), textAlign: TextAlign.center),
                         onTap: () {
                             Navigator.push(
                               context,
@@ -40,7 +40,7 @@ class _MuscleMenuState extends State<MuscleMenu> {
                     color: Colors.white,
                     width: 100,
                     child:  ListTile(
-                      title: Text('Back', style: TextStyle(fontSize: 15, color: Colors.blueGrey), textAlign: TextAlign.center,),
+                      title: Text('Back', style: TextStyle(fontSize: 15, color: Colors.blue), textAlign: TextAlign.center,),
                       onTap: () {
                         Navigator.push(
                             context,
@@ -60,7 +60,7 @@ class _MuscleMenuState extends State<MuscleMenu> {
                     width:100,
                     color: Colors.white,
                     child:  ListTile(
-                      title: Text('Biceps', style: TextStyle(fontSize: 15, color: Colors.blueGrey), textAlign: TextAlign.center,),
+                      title: Text('Biceps', style: TextStyle(fontSize: 15, color: Colors.blue), textAlign: TextAlign.center,),
                       onTap: () {
                         Navigator.push(
                             context,
@@ -80,7 +80,7 @@ class _MuscleMenuState extends State<MuscleMenu> {
                     width: 100,
                     color: Colors.white,
                     child:  ListTile(
-                      title: Text('Triceps', style: TextStyle(fontSize: 15, color: Colors.blueGrey), textAlign: TextAlign.center,),
+                      title: Text('Triceps', style: TextStyle(fontSize: 15, color: Colors.blue), textAlign: TextAlign.center,),
                       onTap: () {
                         Navigator.push(
                             context,
@@ -100,7 +100,7 @@ class _MuscleMenuState extends State<MuscleMenu> {
                     width: 100,
                     color: Colors.white,
                     child:  ListTile(
-                      title: Text('Shoulders', style: TextStyle(fontSize: 15, color: Colors.blueGrey), textAlign: TextAlign.center,),
+                      title: Text('Shoulders', style: TextStyle(fontSize: 15, color: Colors.blue), textAlign: TextAlign.center,),
                       onTap: () {
                         Navigator.push(
                             context,
@@ -120,7 +120,7 @@ class _MuscleMenuState extends State<MuscleMenu> {
                     width: 100,
                     color: Colors.white,
                     child:  ListTile(
-                      title: Text('Legs', style: TextStyle(fontSize: 15, color: Colors.blueGrey), textAlign: TextAlign.center,),
+                      title: Text('Legs', style: TextStyle(fontSize: 15, color: Colors.blue), textAlign: TextAlign.center,),
                       onTap: () {
                         Navigator.push(
                             context,

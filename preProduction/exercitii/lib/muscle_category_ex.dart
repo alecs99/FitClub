@@ -25,7 +25,7 @@ class _GroupExState extends State<GroupEx> {
         appBar: AppBar(
           centerTitle: true,
           title: Text(widget.groupTitle, style: TextStyle(color: Colors.white,)),
-          backgroundColor: Colors.blueGrey,
+          backgroundColor: Colors.blue,
         ),
         body: Column(
             children: <Widget>[
@@ -51,7 +51,7 @@ class _GroupExState extends State<GroupEx> {
                                     )
                                 ),
                                 contentPadding: EdgeInsets.only(top: 10, bottom: 10),
-                                title: Text('${muscleExercises[index]['titleName']}', style: TextStyle(fontSize: 15, color: Colors.blueGrey)),
+                                title: Text('${muscleExercises[index]['titleName']}', style: TextStyle(fontSize: 15, color: Colors.blue)),
                                 subtitle: Text('${muscleExercises[index]['descriptionEx']}', style: TextStyle(color: Colors.black),maxLines: 2, ),
                                 leading: Icon(Icons.fitness_center, color: Colors.black),
                                 trailing: Icon(Icons.arrow_forward, color: Colors.black),

@@ -45,14 +45,14 @@ class _ExerciseDetailsState extends State<ExerciseDetails> {
             children: <Widget>[
               new Container(
                   height: 200,
-                  color: Colors.blueGrey,
+                  color: Colors.blue,
                   margin: EdgeInsets.all(10),
                   child: YoutubePlayer(
                     controller: _controller
                   ),
               ),
               new ListTile(
-                title: Text('DESCRIPTION', style: TextStyle(fontSize: 15, color: Colors.blueGrey)),
+                title: Text('DESCRIPTION', style: TextStyle(fontSize: 15, color: Colors.blue)),
                 subtitle: Text(widget.exerciseDescription, style: TextStyle(color: Colors.black)),
               ),
               new Container(
@@ -61,7 +61,7 @@ class _ExerciseDetailsState extends State<ExerciseDetails> {
                 alignment: Alignment.centerLeft,
                 padding: EdgeInsets.all(10),
                 margin: EdgeInsets.all(10),
-                color: Colors.blueGrey,
+                color: Colors.blue,
                 child: new ListView(
                   children: <Widget>[
                     Text('BENEFITS', textAlign: TextAlign.center, style: TextStyle(color: Colors.white),),

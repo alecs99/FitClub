@@ -19,7 +19,7 @@ class _MainPageState extends State<MainPage> {
       home: Scaffold(
         appBar: AppBar(
           title: Text('ALL EXERCISES', style: TextStyle(color: Colors.white)),
-          backgroundColor: Colors.blueGrey,
+          backgroundColor: Colors.blue,
         ),
         drawer: SideMenu(),
         body: new ListView(
@@ -31,7 +31,7 @@ class _MainPageState extends State<MainPage> {
             )
           ],
         ),
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Colors.blue,
       ),
     );
   }

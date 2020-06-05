@@ -237,7 +237,7 @@ class OneExercise extends StatelessWidget {
                           )
                       ),
                       contentPadding: EdgeInsets.only(top: 10, bottom: 10),
-                      title: Text('$title', style: TextStyle(fontSize: 15, color: Colors.blueGrey)),
+                      title: Text('$title', style: TextStyle(fontSize: 15, color: Colors.blue)),
                       subtitle: Text('$description', style: TextStyle(color: Colors.black),maxLines: 2, ),
                       leading: Icon(Icons.fitness_center, color: Colors.black),
                       trailing: Icon(Icons.arrow_forward, color: Colors.black),

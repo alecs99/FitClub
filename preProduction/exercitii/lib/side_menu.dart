@@ -16,7 +16,7 @@ class _SideMenuState extends State<SideMenu> {
               Container(
                 width: double.infinity,
                 padding: EdgeInsets.all(20),
-                color: Colors.blueGrey,
+                color: Colors.blue,
                 child: Center(
                   child: Column(
                     children: <Widget>[
